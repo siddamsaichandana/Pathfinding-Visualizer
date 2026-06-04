@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.controls{
+    margin-bottom:20px;
+}
+
+select,
+button{
+    padding:10px;
+    margin:5px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+button{
+    background:#007bff;
+    color:white;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.legend{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.item{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.box{
+    width:20px;
+    height:20px;
+    border:1px solid #ccc;
+}
+
+.start{
+    background:green;
+}
+
+.end{
+    background:red;
+}
+
+.wall{
+    background:black;
+}
+
+.visited{
+    background:deepskyblue;
+}
+
+.path{
+    background:yellow;
+}
+
+#grid{
+    display:grid;
+    grid-template-columns:repeat(20,30px);
+    justify-content:center;
+    margin:auto;
+}
+
+.cell{
+    width:30px;
+    height:30px;
+    border:1px solid #ddd;
+    background:white;
+}
+
+.cell.start{
+    background:green;
+}
+
+.cell.end{
+    background:red;
+}
+
+.cell.wall{
+    background:black;
+}
+
+.cell.visited{
+    background:deepskyblue;
+}
+
+.cell.path{
+    background:yellow;
+}
+
+.instructions{
+    margin-top:25px;
+    text-align:left;
+    display:inline-block;
+}
+
+.instructions h3{
+    margin-bottom:10px;
+}
+
+.instructions ul{
+    padding-left:20px;
+}
+
+.instructions li{
+    margin-bottom:5px;
+}

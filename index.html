@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Pathfinding Visualizer</h1>
+
+        <div class="controls">
+
+            <select id="algorithm">
+                <option value="bfs">Breadth First Search (BFS)</option>
+                <option value="dfs">Depth First Search (DFS)</option>
+                <option value="dijkstra">Dijkstra</option>
+                <option value="astar">A*</option>
+            </select>
+
+            <button id="visualizeBtn">
+                Visualize
+            </button>
+
+            <button id="clearPathBtn">
+                Clear Path
+            </button>
+
+            <button id="clearWallsBtn">
+                Clear Walls
+            </button>
+
+            <button id="resetBtn">
+                Reset Grid
+            </button>
+
+        </div>
+
+        <div class="legend">
+
+            <div class="item">
+                <span class="box start"></span>
+                Start
+            </div>
+
+            <div class="item">
+                <span class="box end"></span>
+                End
+            </div>
+
+            <div class="item">
+                <span class="box wall"></span>
+                Wall
+            </div>
+
+            <div class="item">
+                <span class="box visited"></span>
+                Visited
+            </div>
+
+            <div class="item">
+                <span class="box path"></span>
+                Path
+            </div>
+
+        </div>
+
+        <div id="grid"></div>
+
+        <div class="instructions">
+
+            <h3>Instructions</h3>
+
+            <ul>
+                <li>Green cell = Start Node</li>
+                <li>Red cell = End Node</li>
+                <li>Click on cells to create/remove walls</li>
+                <li>Select an algorithm</li>
+                <li>Click Visualize</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
